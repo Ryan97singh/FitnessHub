@@ -1,0 +1,53 @@
+/* Fitness Hub Gym — Brand Design System v2
+   Colors: Black + Gold (#F5C200) brand identity
+   Logo: Stylized figure + FITNESS HUB wordmark
+   Tagline: STRONGER TODAY, BETTER TOMORROW
+*/
+
+/* Base */
+body { font-family: 'Inter', sans-serif; background: #0A0A0A; color: #E8E8E8; }
+.font-display { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.03em; }
+
+/* Sizes */
+.h1-size { font-size: clamp(2.5rem, 6vw, 5rem); }
+.h2-size { font-size: clamp(2rem, 4vw, 3.25rem); }
+.h3-size { font-size: clamp(1.5rem, 2.5vw, 2rem); }
+.section-py { padding-top: 5rem; padding-bottom: 5rem; }
+@media (min-width: 768px) { .section-py { padding-top: 7rem; padding-bottom: 7rem; } }
+
+/* Brand surfaces */
+.surface-black  { background: #0A0A0A; }
+.surface-dark   { background: #111111; }
+.surface-card   { background: #181818; border: 1px solid rgba(255,255,255,0.07); }
+.surface-gold   { background: #F5C200; }
+
+/* Nav link hover */
+.nav-link { transition: color 0.2s; }
+.nav-link:hover, .nav-link.active { color: #F5C200; }
+
+/* Buttons */
+.btn-gold { display:inline-flex; align-items:center; gap:.5rem; background:#F5C200; color:#0A0A0A; font-weight:700; padding:.75rem 1.75rem; border-radius:.5rem; transition:background 0.2s, transform 0.1s; font-size:.9rem; }
+.btn-gold:hover { background:#D4A800; }
+.btn-gold:active { transform:scale(.97); }
+
+.btn-outline { display:inline-flex; align-items:center; gap:.5rem; border: 1.5px solid rgba(255,255,255,0.3); color:#fff; font-weight:600; padding:.75rem 1.75rem; border-radius:.5rem; transition: all 0.2s; font-size:.9rem; }
+.btn-outline:hover { border-color:#F5C200; color:#F5C200; }
+
+.btn-wa { display:inline-flex; align-items:center; gap:.5rem; background:#00C853; color:#fff; font-weight:700; padding:.75rem 1.75rem; border-radius:.5rem; transition:background 0.2s, transform 0.1s; font-size:.9rem; }
+.btn-wa:hover { background:#00A846; }
+.btn-wa:active { transform:scale(.97); }
+
+/* Gold text */
+.text-gold { color: #F5C200; }
+.text-muted-custom { color: rgba(255,255,255,0.5); }
+
+/* Sticky WA */
+.sticky-wa { position:fixed; bottom:1.5rem; right:1.5rem; z-index:50; }
+
+/* Card hover */
+.card-hover { transition: transform 0.2s, border-color 0.2s; }
+.card-hover:hover { transform:translateY(-4px); border-color: rgba(245,194,0,0.3) !important; }
+
+/* FAQ */
+details summary { cursor:pointer; list-style:none; }
+details summary::-webkit-details-marker { display:none; }

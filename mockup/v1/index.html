@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness Hub Gym — Sector 87's Highest-Rated Gym in Faridabad | 4.8★ Reviews</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#E63946',
+            'primary-dark': '#C1121F',
+            accent: '#00C853',
+            ink: '#0B0B0F',
+            slate: '#1F2937',
+            muted: '#6B7280',
+            cream: '#F8F7F2',
+          },
+          fontFamily: {
+            display: ['"Bebas Neue"', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-display { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.02em; }
+    .h1-size { font-size: clamp(2.5rem, 6vw, 5rem); }
+    .h2-size { font-size: clamp(2rem, 4vw, 3.25rem); }
+    .h3-size { font-size: clamp(1.5rem, 2.5vw, 2rem); }
+    .section-py { padding-top: 4rem; padding-bottom: 4rem; }
+    @media (min-width: 768px) { .section-py { padding-top: 6rem; padding-bottom: 6rem; } }
+    .nav-link { transition: color 0.2s; }
+    .nav-link:hover { color: #E63946; }
+    details summary { cursor: pointer; }
+    details[open] summary .chevron { transform: rotate(180deg); }
+    .chevron { transition: transform 0.2s; display: inline-block; }
+    .sticky-wa { position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 50; }
+  </style>
+</head>
+<body class="bg-white text-slate">
+
+<!-- ═══════════════════════════════════════════════════
+     HEADER / NAV
+═══════════════════════════════════════════════════ -->
+<header class="sticky top-0 z-40 bg-ink/95 backdrop-blur border-b border-white/10">
+  <div class="max-w-[1200px] mx-auto px-4 md:px-6 flex items-center justify-between h-16">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-2">
+      <div class="w-8 h-8 bg-primary rounded flex items-center justify-center">
+        <span class="font-display text-white text-sm">FH</span>
+      </div>
+      <span class="font-display text-white text-xl tracking-widest">FITNESS HUB</span>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-white/80">
+      <a href="index.html" class="nav-link text-white">Home</a>
+      <a href="membership.html" class="nav-link">Membership</a>
+      <a href="trainers.html" class="nav-link">Trainers</a>
+      <a href="classes.html" class="nav-link">Classes</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <!-- CTA -->
+    <a href="https://wa.me/919821350650?text=Hi!%20I%20want%20to%20book%20a%20free%20trial%20at%20Fitness%20Hub%20Gym"
+       class="hidden md:inline-flex items-center gap-2 bg-accent text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-green-600 transition-colors">
+      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Book Free Trial
+    </a>
+
+    <!-- Mobile menu button -->
+    <button class="md:hidden text-white p-2">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 1 — HERO
+═══════════════════════════════════════════════════ -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <!-- Background -->
+  <div class="absolute inset-0 bg-ink">
+    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1400&q=80"
+         alt="Fitness Hub Gym floor" class="w-full h-full object-cover opacity-40" />
+    <div class="absolute inset-0 bg-gradient-to-b from-ink/60 via-ink/40 to-ink/80"></div>
+  </div>
+
+  <div class="relative z-10 max-w-[1200px] mx-auto px-4 md:px-6 text-center text-white py-32">
+    <!-- Rating badge -->
+    <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 rounded-full px-4 py-1.5 text-sm font-medium mb-6">
+      <span class="text-yellow-400">⭐</span>
+      <span>4.8 · 452 Google Reviews · Open till 10pm</span>
+    </div>
+
+    <!-- H1 -->
+    <h1 class="font-display h1-size text-white uppercase leading-none mb-4">
+      Sector 87's<br/>
+      <span class="text-primary">Highest-Rated</span><br/>
+      Gym
+    </h1>
+
+    <!-- Sub-headline -->
+    <p class="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
+      4.8★ from 452 members — modern equipment, expert trainers,<br class="hidden md:block"/>
+      built for serious results.
+    </p>
+
+    <!-- CTAs -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="https://wa.me/919821350650?text=Hi!%20I%20want%20to%20book%20a%20free%20trial"
+         class="inline-flex items-center justify-center gap-2 bg-accent text-white font-semibold px-8 py-4 rounded-lg text-base hover:bg-green-600 active:scale-95 transition-all">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Book Free Trial on WhatsApp
+      </a>
+      <a href="tel:+919821350650"
+         class="inline-flex items-center justify-center gap-2 border border-white text-white font-semibold px-8 py-4 rounded-lg text-base hover:bg-white/10 active:scale-95 transition-all">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+        </svg>
+        Call 098213 50650
+      </a>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <svg class="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 2 — SOCIAL PROOF BAR
+═══════════════════════════════════════════════════ -->
+<section class="bg-primary">
+  <div class="max-w-[1200px] mx-auto px-4 md:px-6 py-5">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+      <div class="text-white">
+        <div class="font-display text-3xl tracking-wide">4.8★</div>
+        <div class="text-sm text-white/80 font-medium">Google Rating</div>
+      </div>
+      <div class="text-white">
+        <div class="font-display text-3xl tracking-wide">452+</div>
+        <div class="text-sm text-white/80 font-medium">Reviews</div>
+      </div>
+      <div class="text-white">
+        <div class="font-display text-3xl tracking-wide">5AM–10PM</div>
+        <div class="text-sm text-white/80 font-medium">Daily</div>
+      </div>
+      <div class="text-white">
+        <div class="font-display text-3xl tracking-wide">Since 2019</div>
+        <div class="text-sm text-white/80 font-medium">Serving Faridabad</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 3 — VALUE PROPS
+═══════════════════════════════════════════════════ -->
+<section class="section-py bg-cream">
+  <div class="max-w-[1200px] mx-auto px-4 md:px-6">
+    <div class="text-center mb-12">
+      <h2 class="font-display h2-size text-ink uppercase">Why Members Choose Us</h2>
+      <p class="text-muted mt-2 max-w-xl mx-auto">Everything you need. Nothing you don't.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-2xl p-8 shadow-sm border border-muted/10 text-center">
+        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <h3 class="font-display h3-size text-ink uppercase mb-2">Certified Trainers</h3>
+        <p class="text-muted leading-relaxed">Personalised guidance from day one with trainers like Sanchit and Devesh — experts who track your progress every step.</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-white rounded-2xl p-8 shadow-sm border border-muted/10 text-center">
+        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+          </svg>
+        </div>
+        <h3 class="font-display h3-size text-ink uppercase mb-2">Clean, Spacious Floor</h3>
+        <p class="text-muted leading-relaxed">Neat, air-conditioned, well-maintained equipment you will actually enjoy using — no crowding, no chaos.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-white rounded-2xl p-8 shadow-sm border border-muted/10 text-center">
+        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <h3 class="font-display h3-size text-ink uppercase mb-2">Flexible Timings</h3>
+        <p class="text-muted leading-relaxed">Open 5am to 10pm so early birds and late finishers both fit in — 7 days a week, no excuses.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 4 — FACILITY SHOWCASE
+═══════════════════════════════════════════════════ -->
+<section class="section-py bg-white">
+  <div class="max-w-[1200px] mx-auto px-4 md:px-6">
+    <div class="text-center mb-12">
+      <h2 class="font-display h2-size text-ink uppercase">Our Facility</h2>
+      <p class="text-muted mt-2">State-of-the-art equipment in a clean, spacious environment</p>
+    </div>
+    <!-- Masonry-style grid (mocked with columns) -->
+    <div class="columns-2 md:columns-3 gap-4 space-y-4">
+      <div class="break-inside-avoid rounded-2xl overflow-hidden relative group">
+        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600&q=80" alt="Cardio Zone" class="w-full object-cover group-hover:scale-105 transition-transform duration-300" />
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ink/80 p-3">
+          <span class="text-white text-sm font-semibold">Cardio Zone</span>
+        </div>
+      </div>
+      <div class="break-inside-avoid rounded-2xl overflow-hidden relative group">
+        <img src="https://images.unsplash.com/photo-1534367610401-9f5ed68180aa?w=600&q=80" alt="Free Weights Area" class="w-full object-cover group-hover:scale-105 transition-transform duration-300" />
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ink/80 p-3">
+          <span class="text-white text-sm font-semibold">Free Weights Area</span>
+        </div>
+      </div>
+      <div class="break-inside-avoid rounded-2xl overflow-hidden relative group">
+        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=600&q=80" alt="Strength Machines" class="w-full object-cover group-hover:scale-105 transition-transform duration-300" />
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ink/80 p-3">
+          <span class="text-white text-sm font-semibold">Strength Machines</span>
+        </div>
+      </div>
+      <div class="break-inside-avoid rounded-2xl overflow-hidden relative group">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Functional Training" class="w-full object-cover group-hover:scale-105 transition-transform duration-300" />
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ink/80 p-3">
+          <span class="text-white text-sm font-semibold">Functional Training</span>
+        </div>
+      </div>
+      <div class="break-inside-avoid rounded-2xl overflow-hidden relative group">
+        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600&q=80" alt="Stretching Zone" class="w-full object-cover group-hover:scale-105 transition-transform duration-300" />
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ink/80 p-3">
+          <span class="text-white text-sm font-semibold">Stretching Zone</span>
+        </div>
+      </div>
+      <div class="break-inside-avoid rounded-2xl overflow-hidden relative group">
+        <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600&q=80" alt="Group Classes" class="w-full object-cover group-hover:scale-105 transition-transform duration-300" />
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ink/80 p-3">
+          <span class="text-white text-sm font-semibold">Group Classes</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 5 — CLASSES PREVIEW
+═══════════════════════════════════════════════════ -->
+<section class="section-py bg-cream">
+  <div class="max-w-[1200px] mx-auto px-4 md:px-6">
+    <div class="text-center mb-12">
+      <h2 class="font-display h2-size text-ink uppercase">Our Classes</h2>
+      <p class="text-muted mt-2">Something for every fitness goal</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Strength -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-muted/10 group">
+        <div class="relative overflow-hidden h-48">
+          <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&q=80" alt="Strength Training" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          <div class="absolute inset-0 bg-ink/30"></div>
+          <span class="absolute top-3 left-3 bg-primary text-white text-xs font-bold px-2 py-1 rounded">60 MIN</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-display text-xl text-ink uppercase mb-1">Strength Training</h3>
+          <p class="text-muted text-sm leading-relaxed mb-3">Build muscle and power with progressive overload under expert guidance.</p>
+          <a href="classes.html" class="text-primary font-semibold text-sm hover:underline">View Details →</a>
+        </div>
+      </div>
+      <!-- Cardio -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-muted/10 group">
+        <div class="relative overflow-hidden h-48">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&q=80" alt="Cardio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          <div class="absolute inset-0 bg-ink/30"></div>
+          <span class="absolute top-3 left-3 bg-primary text-white text-xs font-bold px-2 py-1 rounded">45 MIN</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-display text-xl text-ink uppercase mb-1">Cardio</h3>
+          <p class="text-muted text-sm leading-relaxed mb-3">Burn fat and boost endurance with high-energy cardio sessions.</p>
+          <a href="classes.html" class="text-primary font-semibold text-sm hover:underline">View Details →</a>
+        </div>
+      </div>
+      <!-- Zumba -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-muted/10 group">
+        <div class="relative overflow-hidden h-48">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&q=80" alt="Zumba" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          <div class="absolute inset-0 bg-ink/30"></div>
+          <span class="absolute top-3 left-3 bg-primary text-white text-xs font-bold px-2 py-1 rounded">60 MIN</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-display text-xl text-ink uppercase mb-1">Zumba</h3>
+          <p class="text-muted text-sm leading-relaxed mb-3">Dance your way to fitness — fun, energetic, and effective for all levels.</p>
+          <a href="classes.html" class="text-primary font-semibold text-sm hover:underline">View Details →</a>
+        </div>
+      </div>
+      <!-- Personal Training -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-muted/10 group">
+        <div class="relative overflow-hidden h-48">
+          <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&q=80" alt="Personal Training" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          <div class="absolute inset-0 bg-ink/30"></div>
+          <span class="absolute top-3 left-3 bg-primary text-white text-xs font-bold px-2 py-1 rounded">60 MIN</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-display text-xl text-ink uppercase mb-1">Personal Training</h3>
+          <p class="text-muted text-sm leading-relaxed mb-3">One-on-one sessions tailored to your exact goals and schedule.</p>
+          <a href="classes.html" class="text-primary font-semibold text-sm hover:underline">View Details →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 6 — TRAINER SPOTLIGHT
+═══════════════════════════════════════════════════ -->
+<section class="section-py bg-ink">
+  <div class="max-w-[1200px] mx-auto px-4 md:px-6">
+    <div class="text-center mb-12">
+      <h2 class="font-display h2-size text-white uppercase">Meet Your Trainers</h2>
+      <p class="text-white/60 mt-2">Certified professionals committed to your success</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Trainer 1 — Sanchit -->
+      <div class="bg-slate/50 rounded-2xl overflow-hidden border border-white/10">
+        <img src="https://images.unsplash.com/photo-1567013127542-490d757e51cd?w=400&q=80" alt="Sanchit" class="w-full h-64 object-cover object-top" />
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="font-display text-2xl text-white uppercase">Sanchit</h3>
+            <span class="text-muted text-sm">6 yrs exp</span>
+          </div>
+          <p class="text-primary font-semibold text-sm mb-3">Head Trainer</p>
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="bg-primary/20 text-primary text-xs font-medium px-2 py-1 rounded-full">Strength</span>
+            <span class="bg-primary/20 text-primary text-xs font-medium px-2 py-1 rounded-full">Personal Training</span>
+            <span class="bg-primary/20 text-primary text-xs font-medium px-2 py-1 rounded-full">Form Correction</span>
+          </div>
+          <p class="text-white/60 text-sm leading-relaxed">Sanchit is widely praised by members for his motivating coaching style and deep knowledge of strength training fundamentals.</p>
+          <a href="https://wa.me/919821350650?text=Hi!%20I%20want%20to%20book%20a%20session%20with%20Sanchit"
+             class="mt-4 w-full inline-flex items-center justify-center gap-2 bg-accent text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-green-600 transition-colors">
+            Book a Session
+          </a>
+        </div>
+      </div>
+      <!-- Trainer 2 — Devesh -->
+      <div class="bg-slate/50 rounded-2xl overflow-hidden border border-white/10">
+        <img src="https://images.unsplash.com/photo-1583454155184-870a1f63be9f?w=400&q=80" alt="Devesh" class="w-full h-64 object-cover object-top" />
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="font-display text-2xl text-white uppercase">Devesh</h3>
+            <span class="text-muted text-sm">4 yrs exp</span>
+          </div>
+          <p class="text-primary font-semibold text-sm mb-3">Senior Trainer</p>
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="bg-primary/20 text-primary text-xs font-medium px-2 py-1 rounded-full">Endurance</span>
+            <span class="bg-primary/20 text-primary text-xs font-medium px-2 py-1 rounded-full">Cardio</span>
+            <span class="bg-primary/20 text-primary text-xs font-medium px-2 py-1 rounded-full">Weight Loss</span>
+          </div>
+          <p class="text-white/60 text-sm leading-relaxed">Devesh specialises in cardio programming and fat-loss transformations, creating custom plans that fit around busy schedules.</p>
+          <a href="https://wa.me/919821350650?text=Hi!%20I%20want%20to%20book%20a%20session%20with%20Devesh"
+             class="mt-4 w-full inline-flex items-center justify-center gap-2 bg-accent text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-green-600 transition-colors">
+            Book a Session
+          </a>
+        </div>
+      </div>
+      <!-- Trainer 3 — Placeholder -->
+      <div class="bg-slate/50 rounded-2xl overflow-hidden border border-white/10">
+        <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=400&q=80" alt="Trainer" class="w-full h-64 object-cover object-top" />
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="font-display text-2xl text-white uppercase">Trainer Name</h3>
+            <span class="text-muted text-sm">? yrs exp</span>
+          </div>
+          <p class="text-primary font-semibold text-sm mb-3">Trainer — [TODO: Confirm]</p>
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="bg-white/10 text-white/50 text-xs font-medium px-2 py-1 rounded-full">TBD</span>
+          </div>
+          <p class="text-white/40 text-sm leading-relaxed italic">Bio to be filled in after confirming with the gym owner.</p>
+          <a href="trainers.html"
+             class="mt-4 w-full inline-flex items-center justify-center gap-2 border border-white/30 text-white/70 text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-white/10 transition-colors">
+            View All Trainers
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 7 — MEMBERSHIP TEASER
+═══════════════════════════════════════════════════ -->
+<section class="section-py bg-cream">
+  <div class="max-w-[1200px] mx-auto px-4 md:px-6">
+    <div class="text-center mb-12">
+      <h2 class="font-display h2-size text-ink uppercase">Membership Plans</h2>
+      <p class="text-muted mt-2">Flexible plans that fit your commitment level and budget</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8 items-center">
+      <!-- Monthly -->
+      <div class="bg-white rounded-2xl p-8 shadow-sm border border-muted/10">
+        <h3 class="font-display text-2xl text-ink uppercase mb-1">Monthly</h3>
+        <div class="flex items-end gap-1 mb-4">
+          <span class="font-display text-5xl text-ink">₹2,500</span>
+          <span class="text-muted mb-2">/month</span>
+        </div>
+        <ul class="space-y-2 text-sm text-slate mb-6">
+          <li class="flex items-center gap-2"><span class="text-accent font-bold">✓</span> Full gym access</li>
+          <li class="flex items-center gap-2"><span class="text-accent font-bold">✓</span> Group classes</li>
+          <li class="flex items-center gap-2"><span class="text-accent font-bold">✓</span> Trainer guidance</li>
+          <li class="flex items-center gap-2"><span class="text-muted">–</span> <span class="text-muted">Diet consultation</span></li>
+          <li class="flex items-center gap-2"><span class="text-muted">–</span> <span class="text-muted">Locker access</span></li>
+        </ul>
+        <a href="https://wa.me/919821350650?text=Hi!%20I%27m%20interested%20in%20the%20Monthly%20membership%20plan"
+           class="w-full inline-flex items-center justify-center gap-2 border border-ink text-ink font-semibold px-6 py-3 rounded-lg hover:bg-ink hover:text-white active:scale-95 transition-all text-sm">
+          Get This Plan
+        </a>
+      </div>
+
+      <!-- Quarterly — Most Popular -->
+      <div class="bg-ink rounded-2xl p-8 shadow-xl border-2 border-primary relative">
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wide">
+          Most Popular
+        </div>
+        <h3 class="font-display text-2xl text-white uppercase mb-1">Quarterly</h3>
+        <div class="flex items-end gap-1 mb-1">
+          <span class="font-display text-5xl text-white">₹6,500</span>
+          <span class="text-white/60 mb-2">/3 months</span>
+        </div>
+        <p class="text-accent text-xs font-semibold mb-4">Save ₹1,000 vs monthly</p>
+        <ul class="space-y-2 text-sm text-white/80 mb-6">
+          <li class="flex items-center gap-2"><span class="text-accent font-bold">✓</span> Full gym access</li>
+          <li class="flex items-center gap-2"><span class="text-accent font-bold">✓</span> All group classes</li>
+          <li class="flex items-center gap-2"><span class="text-accent font-bold">✓</span> Dedicated trainer</li>
+          <li class="flex items-center gap-2"><span class="text-accent font-bold">✓</span> Diet consultation</li>
+          <li class="flex items-center gap-2"><span class="text-accent font-bold">✓</span> Locker access</li>
+        </ul>
+        <a href="https://wa.me/919821350650?text=Hi!%20I%27m%20interested%20in%20the%20Quarterly%20membership%20plan"
+           class="w-full inline-flex items-center justify-center gap-2 bg-primary text-white font-semibold px-6 py-3 rounded-lg hover:bg-primary-dark active:scale-95 transition-all text-sm">
+          Get This Plan
+        </a>
+      </div>
+
+      <!-- Yearly -->
+      <div class="bg-white rounded-2xl p-8 shadow-sm border border-muted/10">
+        <h3 class="font-display text-2xl text-ink uppercase mb-1">Yearly</h3>
+        <div class="flex items-end gap-1 mb-4">
+          <span class="font-display text-5xl text-ink">₹18,000</span>
+          <span class="text-muted mb-2">/year</span>
+        </div>
+        <ul class="space-y-2 text-sm text-slate mb-6">
+          <li class="flex items-center gap-2"><span class="text-accent font-bold">✓</span> Full gym access</li>
+          <li class="flex items-center gap-2"><span class="text-accent font-bold">✓</span> All group classes</li>
+          <li class="flex items-center gap-2"><span class="text-accent font-bold">✓</span> Dedicated trainer</li>
+          <li class="flex items-center gap-2"><span class="text-accent font-bold">✓</span> Diet consultation</li>
+          <li class="flex items-center gap-2"><span class="text-accent font-bold">✓</span> Locker + towel service</li>
+        </ul>
+        <a href="https://wa.me/919821350650?text=Hi!%20I%27m%20interested%20in%20the%20Yearly%20membership%20plan"
+           class="w-full inline-flex items-center justify-center gap-2 border border-ink text-ink font-semibold px-6 py-3 rounded-lg hover:bg-ink hover:text-white active:scale-95 transition-all text-sm">
+          Get This Plan
+        </a>
+      </div>
+    </div>
+    <p class="text-center text-muted text-sm mt-6">* Prices are indicative — confirm with the gym for latest offers.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 8 — TESTIMONIALS
+═══════════════════════════════════════════════════ -->
+<section class="section-py bg-white">
+  <div class="max-w-[1200px] mx-auto px-4 md:px-6">
+    <div class="text-center mb-12">
+      <h2 class="font-display h2-size text-ink uppercase">What Members Say</h2>
+      <div class="flex items-center justify-center gap-1 mt-2">
+        <span class="text-yellow-400 text-lg">★★★★★</span>
+        <span class="text-muted ml-1">4.8 on Google · 452 reviews</span>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Testimonial 1 -->
+      <div class="bg-cream rounded-2xl p-6 border border-muted/10">
+        <div class="flex text-yellow-400 mb-3 text-sm">★★★★★</div>
+        <p class="text-slate leading-relaxed mb-4">"Best gym in Sector 87. The trainers are very knowledgeable and the equipment is always well maintained. Sanchit sir has transformed my fitness completely in just 3 months."</p>
+        <div class="flex items-center justify-between">
+          <div>
+            <div class="font-semibold text-ink text-sm">Upender Singh</div>
+            <div class="text-muted text-xs">Member</div>
+          </div>
+          <div class="flex items-center gap-1 text-xs text-muted">
+            <svg class="w-3 h-3" viewBox="0 0 24 24" fill="#4285f4"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34a853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#fbbc05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#ea4335"/></svg>
+            Google Reviews
+          </div>
+        </div>
+      </div>
+      <!-- Testimonial 2 -->
+      <div class="bg-cream rounded-2xl p-6 border border-muted/10">
+        <div class="flex text-yellow-400 mb-3 text-sm">★★★★★</div>
+        <p class="text-slate leading-relaxed mb-4">"Clean, spacious, and super affordable. The 5am opening time is a game-changer for morning people like me. Devesh sir's cardio sessions are intense but worth every drop of sweat!"</p>
+        <div class="flex items-center justify-between">
+          <div>
+            <div class="font-semibold text-ink text-sm">Bhanu Rathore</div>
+            <div class="text-muted text-xs">Member</div>
+          </div>
+          <div class="flex items-center gap-1 text-xs text-muted">
+            <svg class="w-3 h-3" viewBox="0 0 24 24" fill="#4285f4"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34a853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#fbbc05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#ea4335"/></svg>
+            Google Reviews
+          </div>
+        </div>
+      </div>
+      <!-- Testimonial 3 -->
+      <div class="bg-cream rounded-2xl p-6 border border-muted/10">
+        <div class="flex text-yellow-400 mb-3 text-sm">★★★★★</div>
+        <p class="text-slate leading-relaxed mb-4">"Lost 12 kgs in 4 months with the diet plan and guided workout. The team is very professional and encouraging. Best decision I made was joining Fitness Hub!"</p>
+        <div class="flex items-center justify-between">
+          <div>
+            <div class="font-semibold text-ink text-sm">Arun Kanojiya</div>
+            <div class="text-muted text-xs">Member</div>
+          </div>
+          <div class="flex items-center gap-1 text-xs text-muted">
+            <svg class="w-3 h-3" viewBox="0 0 24 24" fill="#4285f4"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34a853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#fbbc05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#ea4335"/></svg>
+            Google Reviews
+          </div>
+        </div>
+      </div>
+      <!-- Testimonial 4 -->
+      <div class="bg-cream rounded-2xl p-6 border border-muted/10">
+        <div class="flex text-yellow-400 mb-3 text-sm">★★★★★</div>
+        <p class="text-slate leading-relaxed mb-4">"Great atmosphere and highly motivated trainers. I've tried 3 other gyms in Faridabad and this is by far the best. Equipment is top-notch and always clean."</p>
+        <div class="flex items-center justify-between">
+          <div>
+            <div class="font-semibold text-ink text-sm">Satpal</div>
+            <div class="text-muted text-xs">Member</div>
+          </div>
+          <div class="flex items-center gap-1 text-xs text-muted">
+            <svg class="w-3 h-3" viewBox="0 0 24 24" fill="#4285f4"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34a853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#fbbc05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#ea4335"/></svg>
+            Google Reviews
+          </div>
+        </div>
+      </div>
+      <!-- Testimonial 5 -->
+      <div class="bg-cream rounded-2xl p-6 border border-muted/10 md:col-span-2 lg:col-span-1">
+        <div class="flex text-yellow-400 mb-3 text-sm">★★★★★</div>
+        <p class="text-slate leading-relaxed mb-4">"I'm a working professional with limited time. The early morning and late evening slots work perfectly for me. The trainers are always on time and know exactly how to push you."</p>
+        <div class="flex items-center justify-between">
+          <div>
+            <div class="font-semibold text-ink text-sm">Sudeep Dube</div>
+            <div class="text-muted text-xs">Member</div>
+          </div>
+          <div class="flex items-center gap-1 text-xs text-muted">
+            <svg class="w-3 h-3" viewBox="0 0 24 24" fill="#4285f4"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34a853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#fbbc05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#ea4335"/></svg>
+            Google Reviews
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 9 — LOCATION BLOCK
+═══════════════════════════════════════════════════ -->
+<section class="section-py bg-cream">
+  <div class="max-w-[1200px] mx-auto px-4 md:px-6">
+    <div class="text-center mb-12">
+      <h2 class="font-display h2-size text-ink uppercase">Find Us</h2>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-12 items-start">
+      <!-- Map -->
+      <div class="rounded-2xl overflow-hidden shadow-sm border border-muted/10 h-80 lg:h-full min-h-80 bg-slate/20">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.6!2d77.3476634!3d28.4111936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDI0JzQwLjMiTiA3N8KwMjAnNTEuNiJF!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+          class="w-full h-full" style="border:0;" allowfullscreen loading="lazy"></iframe>
+      </div>
+
+      <!-- Info -->
+      <div class="space-y-6">
+        <!-- Address -->
+        <div>
+          <h3 class="font-display text-2xl text-ink uppercase mb-2">Address</h3>
+          <p class="text-slate">Building No. 2, Hari Enclave<br/>
+          Sector 87, Swami Vivekananda Marg<br/>
+          Faridabad, Haryana 121014<br/>
+          <span class="text-muted text-sm">Inside Institute of Management & Technology</span></p>
+          <a href="https://maps.google.com/?q=28.4111936,77.3476634" target="_blank"
+             class="mt-3 inline-flex items-center gap-2 bg-ink text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-slate transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+            Get Directions
+          </a>
+        </div>
+
+        <!-- Hours -->
+        <div>
+          <h3 class="font-display text-2xl text-ink uppercase mb-2">Opening Hours</h3>
+          <table class="w-full text-sm">
+            <tbody>
+              <tr class="border-b border-muted/20">
+                <td class="py-2 font-medium text-ink">Sunday</td>
+                <td class="py-2 text-muted">5:00 AM – 9:00 PM</td>
+              </tr>
+              <tr class="border-b border-muted/20 bg-primary/5">
+                <td class="py-2 font-medium text-ink">Monday – Saturday</td>
+                <td class="py-2 text-accent font-semibold">5:00 AM – 10:00 PM</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="mt-3 inline-flex items-center gap-2">
+            <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+            <span class="text-accent text-sm font-semibold">Open Now</span>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="tel:+919821350650" class="inline-flex items-center gap-2 border border-ink text-ink font-semibold px-5 py-3 rounded-lg hover:bg-ink hover:text-white transition-all text-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+            098213 50650
+          </a>
+          <a href="https://wa.me/919821350650" class="inline-flex items-center gap-2 bg-accent text-white font-semibold px-5 py-3 rounded-lg hover:bg-green-600 transition-all text-sm">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 10 — FAQ
+═══════════════════════════════════════════════════ -->
+<section class="section-py bg-white">
+  <div class="max-w-[800px] mx-auto px-4 md:px-6">
+    <div class="text-center mb-12">
+      <h2 class="font-display h2-size text-ink uppercase">Frequently Asked Questions</h2>
+    </div>
+    <div class="space-y-3">
+      <details class="bg-cream rounded-2xl border border-muted/10 group">
+        <summary class="flex items-center justify-between p-5 font-semibold text-ink cursor-pointer">
+          Do you offer a free trial?
+          <span class="chevron text-muted">▾</span>
+        </summary>
+        <p class="px-5 pb-5 text-muted leading-relaxed">Yes! Walk in any time between 5am and 10pm for a free trial session. You can also WhatsApp us beforehand to book a slot and ensure a trainer is available for you.</p>
+      </details>
+      <details class="bg-cream rounded-2xl border border-muted/10">
+        <summary class="flex items-center justify-between p-5 font-semibold text-ink cursor-pointer">
+          What are your membership prices?
+          <span class="chevron text-muted">▾</span>
+        </summary>
+        <p class="px-5 pb-5 text-muted leading-relaxed">We offer Monthly (₹2,500), Quarterly (₹6,500), and Yearly (₹18,000) plans. WhatsApp us for the latest offers and any ongoing discounts.</p>
+      </details>
+      <details class="bg-cream rounded-2xl border border-muted/10">
+        <summary class="flex items-center justify-between p-5 font-semibold text-ink cursor-pointer">
+          Do you have female trainers?
+          <span class="chevron text-muted">▾</span>
+        </summary>
+        <p class="px-5 pb-5 text-muted leading-relaxed">Please WhatsApp us or call to confirm female trainer availability. We aim to accommodate all members comfortably.</p>
+      </details>
+      <details class="bg-cream rounded-2xl border border-muted/10">
+        <summary class="flex items-center justify-between p-5 font-semibold text-ink cursor-pointer">
+          Is there parking available?
+          <span class="chevron text-muted">▾</span>
+        </summary>
+        <p class="px-5 pb-5 text-muted leading-relaxed">Yes, parking is available within the Hari Enclave complex. We are inside the Institute of Management & Technology campus, Sector 87.</p>
+      </details>
+      <details class="bg-cream rounded-2xl border border-muted/10">
+        <summary class="flex items-center justify-between p-5 font-semibold text-ink cursor-pointer">
+          Do you offer personal training?
+          <span class="chevron text-muted">▾</span>
+        </summary>
+        <p class="px-5 pb-5 text-muted leading-relaxed">Absolutely. Personal training is available with both Sanchit and Devesh. Sessions are 60 minutes, tailored to your specific fitness goals.</p>
+      </details>
+      <details class="bg-cream rounded-2xl border border-muted/10">
+        <summary class="flex items-center justify-between p-5 font-semibold text-ink cursor-pointer">
+          Can I freeze my membership?
+          <span class="chevron text-muted">▾</span>
+        </summary>
+        <p class="px-5 pb-5 text-muted leading-relaxed">Membership freeze policies depend on your plan. Please contact us on WhatsApp or visit the gym to discuss your specific situation.</p>
+      </details>
+      <details class="bg-cream rounded-2xl border border-muted/10">
+        <summary class="flex items-center justify-between p-5 font-semibold text-ink cursor-pointer">
+          What age group do you cater to?
+          <span class="chevron text-muted">▾</span>
+        </summary>
+        <p class="px-5 pb-5 text-muted leading-relaxed">We welcome members from age 16 and above. Members under 18 should have parental consent. We have programs suitable for teens, adults, and seniors.</p>
+      </details>
+      <details class="bg-cream rounded-2xl border border-muted/10">
+        <summary class="flex items-center justify-between p-5 font-semibold text-ink cursor-pointer">
+          Is there a joining fee?
+          <span class="chevron text-muted">▾</span>
+        </summary>
+        <p class="px-5 pb-5 text-muted leading-relaxed">Currently there is no separate joining fee — you just pay the membership price. WhatsApp us to confirm the latest pricing before visiting.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 11 — FINAL CTA
+═══════════════════════════════════════════════════ -->
+<section class="bg-ink py-20">
+  <div class="max-w-[1200px] mx-auto px-4 md:px-6 text-center">
+    <h2 class="font-display h2-size text-white uppercase mb-4">Your First Session is On Us</h2>
+    <p class="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
+      Walk in any time between 5am and 10pm, or message us on WhatsApp to book ahead.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="https://wa.me/919821350650?text=Hi!%20I%20want%20to%20book%20a%20free%20trial"
+         class="inline-flex items-center justify-center gap-2 bg-accent text-white font-semibold px-8 py-4 rounded-lg text-base hover:bg-green-600 active:scale-95 transition-all">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Us Now
+      </a>
+      <a href="https://maps.google.com/?q=28.4111936,77.3476634" target="_blank"
+         class="inline-flex items-center justify-center gap-2 border border-white text-white font-semibold px-8 py-4 rounded-lg text-base hover:bg-white/10 active:scale-95 transition-all">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+        </svg>
+        Get Directions
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════ -->
+<footer class="bg-ink border-t border-white/10">
+  <div class="max-w-[1200px] mx-auto px-4 md:px-6 py-12">
+    <div class="grid md:grid-cols-4 gap-8 mb-8">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-8 h-8 bg-primary rounded flex items-center justify-center">
+            <span class="font-display text-white text-sm">FH</span>
+          </div>
+          <span class="font-display text-white text-xl tracking-widest">FITNESS HUB GYM</span>
+        </div>
+        <p class="text-white/50 text-sm leading-relaxed max-w-xs">Sector 87's highest-rated gym. Modern equipment, expert trainers, built for serious results.</p>
+        <div class="flex gap-3 mt-4">
+          <a href="https://instagram.com/fitnesshubgym" class="text-white/50 hover:text-primary transition-colors">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-display text-white text-lg uppercase mb-3">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="membership.html" class="text-white/50 hover:text-white transition-colors">Membership</a></li>
+          <li><a href="trainers.html" class="text-white/50 hover:text-white transition-colors">Trainers</a></li>
+          <li><a href="classes.html" class="text-white/50 hover:text-white transition-colors">Classes</a></li>
+          <li><a href="gallery.html" class="text-white/50 hover:text-white transition-colors">Gallery</a></li>
+          <li><a href="contact.html" class="text-white/50 hover:text-white transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display text-white text-lg uppercase mb-3">Contact</h4>
+        <ul class="space-y-2 text-sm text-white/50">
+          <li>Building No. 2, Hari Enclave</li>
+          <li>Sector 87, Faridabad 121014</li>
+          <li><a href="tel:+919821350650" class="hover:text-white transition-colors">098213 50650</a></li>
+          <li>Mon–Sat: 5am–10pm</li>
+          <li>Sun: 5am–9pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-white/30">
+      <span>© 2024 Fitness Hub Gym, Faridabad. All rights reserved.</span>
+      <div class="flex gap-4">
+        <a href="privacy.html" class="hover:text-white/60 transition-colors">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-white/60 transition-colors">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky WhatsApp Button -->
+<a href="https://wa.me/919821350650?text=Hi!%20I%20want%20to%20know%20more%20about%20Fitness%20Hub%20Gym"
+   class="sticky-wa flex items-center gap-2 bg-accent text-white font-semibold px-4 py-3 rounded-full shadow-xl hover:bg-green-600 active:scale-95 transition-all">
+  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="hidden sm:inline">Chat on WhatsApp</span>
+</a>
+
+</body>
+</html>

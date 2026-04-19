@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Trainers — FITNESS HUB</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#F5C200',
+            'gold-dark': '#C9A000',
+            ink: '#0A0A0A',
+            dark: '#111111',
+            card: '#181818',
+            accent: '#00C853',
+          },
+          fontFamily: { display: ['"Bebas Neue"', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; background: #0A0A0A; color: #fff; }
+    dialog { padding: 0; border: none; background: transparent; max-width: 600px; width: 90%; }
+    dialog::backdrop { background: rgba(0,0,0,0.85); }
+    .trainer-card:hover { border-color: rgba(245,194,0,0.3); }
+  </style>
+</head>
+<body class="bg-ink text-white">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 bg-ink/95 backdrop-blur border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="flex items-center gap-3">
+          <div class="w-9 h-9 flex-shrink-0">
+            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+              <circle cx="18" cy="18" r="18" fill="#F5C200"/>
+              <rect x="8" y="16" width="20" height="3" rx="1.5" fill="#0A0A0A"/>
+              <rect x="6" y="13" width="4" height="9" rx="1" fill="#0A0A0A"/>
+              <rect x="26" y="13" width="4" height="9" rx="1" fill="#0A0A0A"/>
+              <circle cx="18" cy="10" r="3" fill="#0A0A0A"/>
+              <path d="M11 17 Q14 13 18 14 Q22 13 25 17" stroke="#0A0A0A" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M15 14 L15 21 M21 14 L21 21" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M15 21 L13 26 M21 21 L23 26" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <div class="font-display text-xl leading-none tracking-wide text-white">FITNESS HUB</div>
+            <div class="text-gold text-[9px] leading-none tracking-widest uppercase mt-0.5">Stronger Today, Better Tomorrow</div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-7">
+          <a href="classes.html" class="text-white/70 hover:text-gold transition text-sm font-medium">Classes</a>
+          <a href="trainers.html" class="text-gold text-sm font-medium">Trainers</a>
+          <a href="membership.html" class="text-white/70 hover:text-gold transition text-sm font-medium">Membership</a>
+          <a href="gallery.html" class="text-white/70 hover:text-gold transition text-sm font-medium">Gallery</a>
+          <a href="contact.html" class="text-white/70 hover:text-gold transition text-sm font-medium">Contact</a>
+        </nav>
+        <a href="https://wa.me/919821350650?text=Hi!%20I%27d%20like%20to%20book%20a%20free%20trial." target="_blank"
+           class="bg-accent hover:opacity-90 text-ink font-semibold text-sm px-4 py-2 rounded-lg transition flex items-center gap-2">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Book Free Trial
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative bg-ink pt-24 pb-16 overflow-hidden">
+    <div class="absolute left-0 top-0 h-full w-1 bg-gold"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-gold font-display tracking-widest text-sm mb-3">EXPERT GUIDANCE</p>
+      <h1 class="font-display text-6xl md:text-8xl text-white mb-4">MEET YOUR TRAINERS</h1>
+      <p class="text-white/50 text-lg max-w-xl mx-auto">Certified professionals who train hard so you train smarter. Your goals are their goals.</p>
+    </div>
+  </section>
+
+  <!-- TRAINER GRID -->
+  <section class="bg-dark py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Sanchit -->
+        <div class="trainer-card bg-card border border-white/7 rounded-2xl overflow-hidden transition-all duration-300 flex flex-col">
+          <div class="relative h-72 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&q=80&fit=crop" alt="Sanchit" class="w-full h-full object-cover"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-5">
+              <h3 class="font-display text-3xl text-gold">SANCHIT</h3>
+              <p class="text-white/70 text-sm">Head Trainer &middot; 6 Years Experience</p>
+            </div>
+          </div>
+          <div class="p-6 flex flex-col flex-1">
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs px-3 py-1 rounded-full bg-gold/10 border border-gold/20 text-gold">Strength</span>
+              <span class="text-xs px-3 py-1 rounded-full bg-gold/10 border border-gold/20 text-gold">Powerlifting</span>
+              <span class="text-xs px-3 py-1 rounded-full bg-gold/10 border border-gold/20 text-gold">Nutrition</span>
+            </div>
+            <p class="text-white/50 text-sm leading-relaxed mb-6 flex-1">Sanchit has been transforming bodies and mindsets for over 6 years. A national-level powerlifting competitor, he brings elite-level programming to everyday gym-goers.</p>
+            <div class="flex gap-3">
+              <button onclick="document.getElementById('dialog-sanchit').showModal()" class="flex-1 text-center border border-white/15 hover:border-gold/30 text-white/70 hover:text-gold text-sm py-2.5 rounded-xl transition font-medium">
+                View Profile
+              </button>
+              <a href="https://wa.me/919821350650?text=Hi!%20I%27d%20like%20to%20book%20a%20session%20with%20Sanchit." target="_blank"
+                 class="flex-1 text-center bg-accent hover:opacity-90 text-ink text-sm py-2.5 rounded-xl transition font-semibold">
+                Book Session
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Devesh -->
+        <div class="trainer-card bg-card border border-white/7 rounded-2xl overflow-hidden transition-all duration-300 flex flex-col">
+          <div class="relative h-72 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1583454155184-870a1f63be9f?w=600&q=80&fit=crop" alt="Devesh" class="w-full h-full object-cover"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-5">
+              <h3 class="font-display text-3xl text-gold">DEVESH</h3>
+              <p class="text-white/70 text-sm">Senior Trainer &middot; 4 Years Experience</p>
+            </div>
+          </div>
+          <div class="p-6 flex flex-col flex-1">
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs px-3 py-1 rounded-full bg-gold/10 border border-gold/20 text-gold">Cardio</span>
+              <span class="text-xs px-3 py-1 rounded-full bg-gold/10 border border-gold/20 text-gold">HIIT</span>
+              <span class="text-xs px-3 py-1 rounded-full bg-gold/10 border border-gold/20 text-gold">Fat Loss</span>
+            </div>
+            <p class="text-white/50 text-sm leading-relaxed mb-6 flex-1">Devesh specializes in high-intensity cardio and metabolic conditioning. His fat-loss transformation record speaks for itself — clients see results within weeks, not months.</p>
+            <div class="flex gap-3">
+              <button onclick="document.getElementById('dialog-devesh').showModal()" class="flex-1 text-center border border-white/15 hover:border-gold/30 text-white/70 hover:text-gold text-sm py-2.5 rounded-xl transition font-medium">
+                View Profile
+              </button>
+              <a href="https://wa.me/919821350650?text=Hi!%20I%27d%20like%20to%20book%20a%20session%20with%20Devesh." target="_blank"
+                 class="flex-1 text-center bg-accent hover:opacity-90 text-ink text-sm py-2.5 rounded-xl transition font-semibold">
+                Book Session
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Placeholder -->
+        <div class="trainer-card border-2 border-dashed border-white/15 rounded-2xl overflow-hidden flex flex-col items-center justify-center p-10 text-center min-h-[480px]">
+          <div class="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center mb-5">
+            <svg class="w-8 h-8 text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+          </div>
+          <p class="text-white/40 text-sm font-medium mb-1">Trainer Slot Available</p>
+          <p class="text-white/20 text-xs leading-relaxed max-w-xs">TODO: confirm trainer details with client. Photo and bio to be added.</p>
+          <div class="mt-6 px-4 py-2 rounded-lg border border-white/10 text-white/20 text-xs">Coming Soon</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA BAND -->
+  <section class="bg-dark py-16 border-t border-white/10">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="font-display text-4xl md:text-6xl text-gold mb-3">TRAIN WITH THE BEST</h2>
+      <p class="text-white/40 text-base mb-8">Book a personal session with any of our trainers. First session is on us.</p>
+      <a href="https://wa.me/919821350650?text=Hi!%20I%27d%20like%20to%20book%20a%20personal%20training%20session." target="_blank"
+         class="inline-flex items-center gap-3 bg-gold hover:bg-gold-dark text-ink font-bold text-base px-8 py-4 rounded-xl transition">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Book a Free Session
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-ink border-t border-white/10 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 flex-shrink-0">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                <circle cx="18" cy="18" r="18" fill="#F5C200"/>
+                <rect x="8" y="16" width="20" height="3" rx="1.5" fill="#0A0A0A"/>
+                <rect x="6" y="13" width="4" height="9" rx="1" fill="#0A0A0A"/>
+                <rect x="26" y="13" width="4" height="9" rx="1" fill="#0A0A0A"/>
+                <circle cx="18" cy="10" r="3" fill="#0A0A0A"/>
+                <path d="M11 17 Q14 13 18 14 Q22 13 25 17" stroke="#0A0A0A" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M15 14 L15 21 M21 14 L21 21" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M15 21 L13 26 M21 21 L23 26" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <div class="font-display text-lg text-white leading-none">FITNESS HUB</div>
+              <div class="text-gold text-[9px] tracking-widest uppercase mt-0.5">Stronger Today, Better Tomorrow</div>
+            </div>
+          </div>
+          <p class="text-white/30 text-sm leading-relaxed mb-4">Your neighborhood gym built for real results.</p>
+          <a href="https://instagram.com/fitnesshubgym87" target="_blank" class="text-white/40 hover:text-gold transition text-sm">@fitnesshubgym87</a>
+        </div>
+        <div>
+          <h4 class="font-display text-gold uppercase tracking-wider text-sm mb-5">Quick Links</h4>
+          <ul class="space-y-2.5">
+            <li><a href="classes.html" class="text-white/35 hover:text-white transition text-sm">Classes</a></li>
+            <li><a href="trainers.html" class="text-white/35 hover:text-white transition text-sm">Trainers</a></li>
+            <li><a href="membership.html" class="text-white/35 hover:text-white transition text-sm">Membership</a></li>
+            <li><a href="gallery.html" class="text-white/35 hover:text-white transition text-sm">Gallery</a></li>
+            <li><a href="contact.html" class="text-white/35 hover:text-white transition text-sm">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display text-gold uppercase tracking-wider text-sm mb-5">Contact</h4>
+          <ul class="space-y-3 text-sm text-white/35">
+            <li><a href="tel:+919821350650" class="hover:text-white transition">+91 98213 50650</a></li>
+            <li><a href="https://wa.me/919821350650" target="_blank" class="hover:text-white transition">WhatsApp Us</a></li>
+            <li>123 Gym Street, Andheri West<br/>Mumbai, Maharashtra 400053</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display text-gold uppercase tracking-wider text-sm mb-5">Hours</h4>
+          <ul class="space-y-2 text-sm">
+            <li class="flex justify-between"><span class="text-white/35">Mon – Sat</span><span class="text-gold">6AM – 10PM</span></li>
+            <li class="flex justify-between"><span class="text-white/35">Sunday</span><span class="text-white/35">8AM – 6PM</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-3">
+        <p class="text-white/25 text-xs">© 2026 FITNESS HUB. All rights reserved.</p>
+        <div class="flex gap-5 text-white/25 text-xs">
+          <a href="#" class="hover:text-white transition">Privacy Policy</a>
+          <a href="#" class="hover:text-white transition">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- DIALOGS -->
+  <dialog id="dialog-sanchit">
+    <div class="bg-card border border-white/10 rounded-2xl overflow-hidden">
+      <div class="relative h-48">
+        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&q=80&fit=crop" alt="Sanchit" class="w-full h-full object-cover"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent"></div>
+        <button onclick="document.getElementById('dialog-sanchit').close()" class="absolute top-4 right-4 text-white/50 hover:text-white bg-ink/60 rounded-full p-1.5">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <div class="absolute bottom-4 left-6">
+          <h3 class="font-display text-4xl text-gold">SANCHIT</h3>
+          <p class="text-white/60 text-sm">Head Trainer &middot; 6 Years Experience</p>
+        </div>
+      </div>
+      <div class="p-6">
+        <div class="flex flex-wrap gap-2 mb-5">
+          <span class="text-xs px-3 py-1 rounded-full bg-gold/10 border border-gold/20 text-gold">Strength</span>
+          <span class="text-xs px-3 py-1 rounded-full bg-gold/10 border border-gold/20 text-gold">Powerlifting</span>
+          <span class="text-xs px-3 py-1 rounded-full bg-gold/10 border border-gold/20 text-gold">Nutrition</span>
+          <span class="text-xs px-3 py-1 rounded-full bg-gold/10 border border-gold/20 text-gold">Functional Training</span>
+        </div>
+        <p class="text-white/60 text-sm leading-relaxed mb-4">Sanchit has been transforming bodies and mindsets for over 6 years. A national-level powerlifting competitor, he brings elite-level programming to everyday gym-goers. He holds a BSc in Sports Science and multiple CPT certifications.</p>
+        <div class="bg-dark rounded-xl p-4 mb-5">
+          <p class="text-gold text-xs font-semibold uppercase tracking-wider mb-2">Certifications</p>
+          <ul class="text-white/40 text-xs space-y-1">
+            <li>• CPT — International Sports Sciences Association (ISSA)</li>
+            <li>• Precision Nutrition Level 1</li>
+            <li>• National Powerlifting Federation — Competitor</li>
+            <li>• [Additional certifications: to confirm with client]</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/919821350650?text=Hi!%20I%27d%20like%20to%20book%20a%20session%20with%20Sanchit." target="_blank"
+           class="w-full flex items-center justify-center gap-2 bg-accent hover:opacity-90 text-ink font-bold py-3 rounded-xl transition text-sm">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Book a Session with Sanchit
+        </a>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="dialog-devesh">
+    <div class="bg-card border border-white/10 rounded-2xl overflow-hidden">
+      <div class="relative h-48">
+        <img src="https://images.unsplash.com/photo-1583454155184-870a1f63be9f?w=600&q=80&fit=crop" alt="Devesh" class="w-full h-full object-cover"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent"></div>
+        <button onclick="document.getElementById('dialog-devesh').close()" class="absolute top-4 right-4 text-white/50 hover:text-white bg-ink/60 rounded-full p-1.5">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <div class="absolute bottom-4 left-6">
+          <h3 class="font-display text-4xl text-gold">DEVESH</h3>
+          <p class="text-white/60 text-sm">Senior Trainer &middot; 4 Years Experience</p>
+        </div>
+      </div>
+      <div class="p-6">
+        <div class="flex flex-wrap gap-2 mb-5">
+          <span class="text-xs px-3 py-1 rounded-full bg-gold/10 border border-gold/20 text-gold">Cardio</span>
+          <span class="text-xs px-3 py-1 rounded-full bg-gold/10 border border-gold/20 text-gold">HIIT</span>
+          <span class="text-xs px-3 py-1 rounded-full bg-gold/10 border border-gold/20 text-gold">Fat Loss</span>
+          <span class="text-xs px-3 py-1 rounded-full bg-gold/10 border border-gold/20 text-gold">Endurance</span>
+        </div>
+        <p class="text-white/60 text-sm leading-relaxed mb-4">Devesh specializes in high-intensity cardio and metabolic conditioning. His fat-loss transformation record speaks for itself — clients see results within weeks, not months. He takes a science-backed approach to every program he designs.</p>
+        <div class="bg-dark rounded-xl p-4 mb-5">
+          <p class="text-gold text-xs font-semibold uppercase tracking-wider mb-2">Certifications</p>
+          <ul class="text-white/40 text-xs space-y-1">
+            <li>• CPT — American Council on Exercise (ACE)</li>
+            <li>• HIIT Specialist Certification</li>
+            <li>• CPR / AED Certified</li>
+            <li>• [Additional certifications: to confirm with client]</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/919821350650?text=Hi!%20I%27d%20like%20to%20book%20a%20session%20with%20Devesh." target="_blank"
+           class="w-full flex items-center justify-center gap-2 bg-accent hover:opacity-90 text-ink font-bold py-3 rounded-xl transition text-sm">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Book a Session with Devesh
+        </a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Sticky WhatsApp -->
+  <a href="https://wa.me/919821350650" target="_blank"
+     class="fixed bottom-6 right-6 z-50 bg-accent hover:opacity-90 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition">
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+
+</body>
+</html>

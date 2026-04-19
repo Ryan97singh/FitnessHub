@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classes — Fitness Hub Gym Faridabad</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#E63946', 'primary-dark': '#C1121F', accent: '#00C853', ink: '#0B0B0F', slate: '#1F2937', muted: '#6B7280', cream: '#F8F7F2' },
+          fontFamily: { display: ['"Bebas Neue"', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-display { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.02em; }
+    .h2-size { font-size: clamp(2rem, 4vw, 3.25rem); }
+    .sticky-wa { position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 50; }
+  </style>
+</head>
+<body class="bg-white text-slate">
+
+<!-- HEADER -->
+<header class="sticky top-0 z-40 bg-ink/95 backdrop-blur border-b border-white/10">
+  <div class="max-w-[1200px] mx-auto px-4 md:px-6 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2">
+      <div class="w-8 h-8 bg-primary rounded flex items-center justify-center"><span class="font-display text-white text-sm">FH</span></div>
+      <span class="font-display text-white text-xl tracking-widest">FITNESS HUB</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-white/80">
+      <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+      <a href="membership.html" class="hover:text-primary transition-colors">Membership</a>
+      <a href="trainers.html" class="hover:text-primary transition-colors">Trainers</a>
+      <a href="classes.html" class="text-primary">Classes</a>
+      <a href="gallery.html" class="hover:text-primary transition-colors">Gallery</a>
+      <a href="contact.html" class="hover:text-primary transition-colors">Contact</a>
+    </nav>
+    <a href="https://wa.me/919821350650" class="hidden md:inline-flex items-center gap-2 bg-accent text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-green-600 transition-colors">Book Free Trial</a>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="bg-ink py-20 relative overflow-hidden">
+  <div class="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_bottom_right,#E63946,transparent)]"></div>
+  <div class="max-w-[1200px] mx-auto px-4 md:px-6 relative text-center">
+    <div class="text-primary font-semibold text-sm uppercase tracking-widest mb-3">All Fitness Levels Welcome</div>
+    <h1 class="font-display h2-size text-white uppercase mb-4">Our Classes</h1>
+    <p class="text-white/60 text-lg max-w-2xl mx-auto">From strength training to Zumba — we have a class for every goal, every schedule, and every fitness level.</p>
+  </div>
+</section>
+
+<!-- CLASSES LIST -->
+<section class="py-16 md:py-24 bg-cream">
+  <div class="max-w-[1000px] mx-auto px-4 md:px-6 space-y-8">
+
+    <!-- Strength Training -->
+    <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-muted/10 md:flex">
+      <div class="md:w-80 h-56 md:h-auto flex-shrink-0 relative overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=500&q=80" alt="Strength Training" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-ink/20"></div>
+        <div class="absolute bottom-3 left-3 bg-primary text-white text-xs font-bold px-2 py-1 rounded">60 MIN</div>
+      </div>
+      <div class="p-6 flex flex-col justify-between flex-1">
+        <div>
+          <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
+            <h2 class="font-display text-3xl text-ink uppercase">Strength Training</h2>
+            <div class="flex gap-2 flex-wrap">
+              <span class="bg-cream text-muted text-xs font-semibold px-2 py-1 rounded-full">Mon · Wed · Fri</span>
+            </div>
+          </div>
+          <p class="text-muted leading-relaxed mb-3">Build muscle, increase strength, and improve body composition through scientifically-programmed progressive overload. Our trainers guide you on correct form, rep ranges, and recovery to maximise results safely.</p>
+          <div class="grid grid-cols-3 gap-3 text-sm mb-4">
+            <div class="bg-cream rounded-xl p-3 text-center">
+              <div class="font-semibold text-ink">Duration</div>
+              <div class="text-muted text-xs mt-0.5">60 minutes</div>
+            </div>
+            <div class="bg-cream rounded-xl p-3 text-center">
+              <div class="font-semibold text-ink">Level</div>
+              <div class="text-muted text-xs mt-0.5">All levels</div>
+            </div>
+            <div class="bg-cream rounded-xl p-3 text-center">
+              <div class="font-semibold text-ink">Equipment</div>
+              <div class="text-muted text-xs mt-0.5">Provided</div>
+            </div>
+          </div>
+          <p class="text-sm text-slate"><strong>Who it's for:</strong> Anyone looking to build muscle, improve strength, or correct posture. Perfect for beginners and experienced lifters alike.</p>
+        </div>
+        <a href="https://wa.me/919821350650?text=Hi!%20I%27d%20like%20to%20join%20the%20Strength%20Training%20class%20at%20Fitness%20Hub%20Gym"
+           class="mt-4 inline-flex items-center gap-2 bg-accent text-white font-semibold px-5 py-3 rounded-lg hover:bg-green-600 transition-all text-sm w-fit">
+          Join This Class
+        </a>
+      </div>
+    </div>
+
+    <!-- Cardio -->
+    <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-muted/10 md:flex">
+      <div class="md:w-80 h-56 md:h-auto flex-shrink-0 relative overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&q=80" alt="Cardio" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-ink/20"></div>
+        <div class="absolute bottom-3 left-3 bg-primary text-white text-xs font-bold px-2 py-1 rounded">45 MIN</div>
+      </div>
+      <div class="p-6 flex flex-col justify-between flex-1">
+        <div>
+          <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
+            <h2 class="font-display text-3xl text-ink uppercase">Cardio</h2>
+            <div class="flex gap-2 flex-wrap">
+              <span class="bg-cream text-muted text-xs font-semibold px-2 py-1 rounded-full">Tue · Thu · Sat</span>
+            </div>
+          </div>
+          <p class="text-muted leading-relaxed mb-3">High-energy cardio sessions combining HIIT, circuit training, and endurance work. Boost your metabolic rate, improve heart health, and burn fat effectively with our structured cardio programs.</p>
+          <div class="grid grid-cols-3 gap-3 text-sm mb-4">
+            <div class="bg-cream rounded-xl p-3 text-center">
+              <div class="font-semibold text-ink">Duration</div>
+              <div class="text-muted text-xs mt-0.5">45 minutes</div>
+            </div>
+            <div class="bg-cream rounded-xl p-3 text-center">
+              <div class="font-semibold text-ink">Level</div>
+              <div class="text-muted text-xs mt-0.5">Beginner–Adv</div>
+            </div>
+            <div class="bg-cream rounded-xl p-3 text-center">
+              <div class="font-semibold text-ink">Equipment</div>
+              <div class="text-muted text-xs mt-0.5">Minimal</div>
+            </div>
+          </div>
+          <p class="text-sm text-slate"><strong>Who it's for:</strong> Members focused on fat loss, improving stamina, or training for any sport or physical activity.</p>
+        </div>
+        <a href="https://wa.me/919821350650?text=Hi!%20I%27d%20like%20to%20join%20the%20Cardio%20class%20at%20Fitness%20Hub%20Gym"
+           class="mt-4 inline-flex items-center gap-2 bg-accent text-white font-semibold px-5 py-3 rounded-lg hover:bg-green-600 transition-all text-sm w-fit">
+          Join This Class
+        </a>
+      </div>
+    </div>
+
+    <!-- Zumba -->
+    <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-muted/10 md:flex">
+      <div class="md:w-80 h-56 md:h-auto flex-shrink-0 relative overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&q=80" alt="Zumba" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-ink/20"></div>
+        <div class="absolute bottom-3 left-3 bg-primary text-white text-xs font-bold px-2 py-1 rounded">60 MIN</div>
+      </div>
+      <div class="p-6 flex flex-col justify-between flex-1">
+        <div>
+          <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
+            <h2 class="font-display text-3xl text-ink uppercase">Zumba</h2>
+            <div class="flex gap-2 flex-wrap">
+              <span class="bg-cream text-muted text-xs font-semibold px-2 py-1 rounded-full">TODO: Confirm days</span>
+            </div>
+          </div>
+          <p class="text-muted leading-relaxed mb-3">Dance your way to fitness! Our Zumba classes combine Latin rhythms with easy-to-follow dance moves, creating a fun, high-energy workout that doesn't feel like exercise. Great for calorie burn and mood boost.</p>
+          <div class="grid grid-cols-3 gap-3 text-sm mb-4">
+            <div class="bg-cream rounded-xl p-3 text-center">
+              <div class="font-semibold text-ink">Duration</div>
+              <div class="text-muted text-xs mt-0.5">60 minutes</div>
+            </div>
+            <div class="bg-cream rounded-xl p-3 text-center">
+              <div class="font-semibold text-ink">Level</div>
+              <div class="text-muted text-xs mt-0.5">All levels</div>
+            </div>
+            <div class="bg-cream rounded-xl p-3 text-center">
+              <div class="font-semibold text-ink">Equipment</div>
+              <div class="text-muted text-xs mt-0.5">None needed</div>
+            </div>
+          </div>
+          <p class="text-sm text-slate"><strong>Who it's for:</strong> Anyone who finds traditional cardio boring. Perfect for all ages — no dance experience required.</p>
+        </div>
+        <a href="https://wa.me/919821350650?text=Hi!%20I%27d%20like%20to%20join%20the%20Zumba%20class%20at%20Fitness%20Hub%20Gym"
+           class="mt-4 inline-flex items-center gap-2 bg-accent text-white font-semibold px-5 py-3 rounded-lg hover:bg-green-600 transition-all text-sm w-fit">
+          Join This Class
+        </a>
+      </div>
+    </div>
+
+    <!-- Personal Training -->
+    <div class="bg-ink rounded-2xl overflow-hidden shadow-sm border border-primary/30 md:flex">
+      <div class="md:w-80 h-56 md:h-auto flex-shrink-0 relative overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&q=80" alt="Personal Training" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-ink/30"></div>
+        <div class="absolute bottom-3 left-3 bg-primary text-white text-xs font-bold px-2 py-1 rounded">60 MIN</div>
+        <div class="absolute top-3 right-3 bg-primary text-white text-xs font-bold px-2 py-1 rounded-full">Premium</div>
+      </div>
+      <div class="p-6 flex flex-col justify-between flex-1">
+        <div>
+          <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
+            <h2 class="font-display text-3xl text-white uppercase">Personal Training</h2>
+            <div class="flex gap-2">
+              <span class="bg-white/10 text-white/70 text-xs font-semibold px-2 py-1 rounded-full">All Days</span>
+            </div>
+          </div>
+          <p class="text-white/70 leading-relaxed mb-3">100% one-on-one attention from a certified trainer. Every session is fully customised to your specific goals — whether that's weight loss, muscle gain, injury rehabilitation, or sports performance.</p>
+          <div class="grid grid-cols-3 gap-3 text-sm mb-4">
+            <div class="bg-white/10 rounded-xl p-3 text-center">
+              <div class="font-semibold text-white">Duration</div>
+              <div class="text-white/50 text-xs mt-0.5">60 minutes</div>
+            </div>
+            <div class="bg-white/10 rounded-xl p-3 text-center">
+              <div class="font-semibold text-white">Level</div>
+              <div class="text-white/50 text-xs mt-0.5">Any level</div>
+            </div>
+            <div class="bg-white/10 rounded-xl p-3 text-center">
+              <div class="font-semibold text-white">Schedule</div>
+              <div class="text-white/50 text-xs mt-0.5">Flexible</div>
+            </div>
+          </div>
+          <p class="text-sm text-white/60"><strong class="text-white">Who it's for:</strong> Members who want rapid, measurable results with expert guidance every step of the way.</p>
+        </div>
+        <a href="https://wa.me/919821350650?text=Hi!%20I%27m%20interested%20in%20Personal%20Training%20at%20Fitness%20Hub%20Gym"
+           class="mt-4 inline-flex items-center gap-2 bg-primary text-white font-semibold px-5 py-3 rounded-lg hover:bg-primary-dark transition-all text-sm w-fit">
+          Book Personal Training
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="bg-primary py-16">
+  <div class="max-w-[1200px] mx-auto px-4 md:px-6 text-center">
+    <h2 class="font-display text-4xl md:text-5xl text-white uppercase mb-3">Not Sure Which Class to Pick?</h2>
+    <p class="text-white/80 text-lg mb-8">WhatsApp us and we'll recommend the best class for your goals — for free.</p>
+    <a href="https://wa.me/919821350650?text=Hi!%20I%27m%20not%20sure%20which%20class%20to%20join.%20Can%20you%20help%20me%20choose?"
+       class="inline-flex items-center gap-2 bg-white text-primary font-bold px-8 py-4 rounded-lg hover:bg-cream active:scale-95 transition-all text-base">
+      Get a Free Recommendation
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-ink border-t border-white/10 py-8">
+  <div class="max-w-[1200px] mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/40">
+    <span>© 2024 Fitness Hub Gym, Faridabad</span>
+    <div class="flex gap-6">
+      <a href="index.html" class="hover:text-white transition-colors">Home</a>
+      <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919821350650" class="sticky-wa flex items-center gap-2 bg-accent text-white font-semibold px-4 py-3 rounded-full shadow-xl hover:bg-green-600 transition-all">
+  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+</body>
+</html>
